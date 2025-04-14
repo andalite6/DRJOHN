@@ -1,26 +1,63 @@
-# Core Web UI
-streamlit==1.33.0
+# Core application requirements
+streamlit>=1.30.0
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+typing_extensions>=4.8.0
 
-# AI and LLM Integration
-openai==1.14.2
+# Data processing and visualization
+pandas>=2.1.0
+numpy>=1.25.0
+plotly>=5.18.0
+matplotlib>=3.8.0
+scipy>=1.11.0
 
-# Medical and Clinical Utilities
-pandas==2.2.1
-numpy==1.26.4
-scikit-learn==1.4.1
-scipy==1.12.0
-nltk==3.8.1
-transformers==4.39.3
-sentence-transformers==2.6.1
+# Medical data handling
+pydicom>=2.4.0
+pynetdicom>=2.0.0
+nibabel>=5.1.0  # For medical imaging
+fhir.resources>=7.0.0  # FHIR resources for healthcare data
 
-# Natural Language and Medical Text Parsing
-spacy==3.7.4
-scispacy==0.5.4
-en_core_sci_sm @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz
+# API clients for LLM integration
+anthropic>=0.19.0
+openai>=1.10.0
+llama-cpp-python>=0.2.0  # For Meta's LLM models
+xai-python>=0.1.0  # Placeholder for XAI integration
 
-# Optional: Health/EMR-related FHIR utils (if integrating with FHIR APIs)
-fhirclient==4.0.0
+# Security and compliance
+cryptography>=41.0.0
+bcrypt>=4.0.0
+pyjwt>=2.8.0
+authlib>=1.2.0  # OAuth and JWT handling
 
-# Visualization (optional for patient graphs, etc.)
-matplotlib==3.8.4
-plotly==5.20.0
+# PDF generation and document handling
+reportlab>=4.0.5
+PyPDF2>=3.0.0
+docx2pdf>=0.1.8
+python-docx>=1.0.0
+
+# Database connectivity
+sqlalchemy>=2.0.0
+pymongo>=4.5.0
+redis>=5.0.0
+
+# Background tasks and scheduling
+celery>=5.3.0
+apscheduler>=3.10.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Development tools
+black>=23.10.0
+isort>=5.12.0
+flake8>=6.1.0
+mypy>=1.5.0
+
+# Cloud integration
+boto3>=1.28.0  # AWS
+google-cloud-storage>=2.10.0  # GCP
+azure-storage-blob>=12.18.0  # Azure
+
+# HIPAA compliance toolkit
+hipaa-compliance-toolkit>=1.0.0  # Fictional package for illustration
