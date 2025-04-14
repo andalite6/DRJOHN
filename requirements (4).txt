@@ -1,0 +1,26 @@
+# Core Web UI
+streamlit==1.33.0
+
+# AI and LLM Integration
+openai==1.14.2
+
+# Medical and Clinical Utilities
+pandas==2.2.1
+numpy==1.26.4
+scikit-learn==1.4.1
+scipy==1.12.0
+nltk==3.8.1
+transformers==4.39.3
+sentence-transformers==2.6.1
+
+# Natural Language and Medical Text Parsing
+spacy==3.7.4
+scispacy==0.5.4
+en_core_sci_sm @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz
+
+# Optional: Health/EMR-related FHIR utils (if integrating with FHIR APIs)
+fhirclient==4.0.0
+
+# Visualization (optional for patient graphs, etc.)
+matplotlib==3.8.4
+plotly==5.20.0
