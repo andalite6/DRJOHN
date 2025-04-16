@@ -1702,7 +1702,7 @@ class DrJacksonPersona:
         return response
     
     def is_appropriate_query(self, query: str) -> bool:
-        """Determines if a query is appropriate for Dr. Jackson's expertise"""
+        "Determines if a query is appropriate for Dr. Jackson's expertise"
         # Simple implementation - could be expanded with NLP
         inappropriate_terms = ["personal", "friendship", "date", "casual", "non-medical"]
         return not any(term in query.lower() for term in inappropriate_terms)
