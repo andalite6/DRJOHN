@@ -1461,7 +1461,7 @@ class LLMSettings:
                     st.warning("No AI services configured. Some features may be limited.")
 
 class DrJacksonPersona:
-    """Core implementation of Dr. Jackson's professional persona"""
+    "Core implementation of Dr. Jackson's professional persona"
     
     def __init__(self):
         self.credentials = "DNP, APRN, FNP-C, CFMP"
